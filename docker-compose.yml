@@ -1,0 +1,7 @@
+services:
+  my-script:
+    build: .
+    container_name: my-script
+    volumes:
+      - ./logs:/var/log/monitor
+    restart: unless-stopped
